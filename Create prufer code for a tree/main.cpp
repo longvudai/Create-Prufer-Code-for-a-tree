@@ -57,19 +57,10 @@ int main()
 {
     int i, vertex;
     cout << "input numbers of vertex :" ; cin >> vertex;
- //   std::ifstream infile("/Users/dailong/Desktop/C++Basics/Create prufer code for a tree/Node.txt");
 
-  //  infile >> vertex;
-    
-    
     int root[vertex - 1];
     int leaf[vertex - 1];
-    //
-   // for (int i = 0; i < vertex - 1; i++) {
-   //     infile >> root[i] >> leaf[i];
-   // }
-  //  infile.close();
-    //
+ 
     for (i = 0; i < vertex - 1; i++) {
         cout << "canh thu " << i + 1 << " : "; cin >>root[i] >> leaf[i];
     }

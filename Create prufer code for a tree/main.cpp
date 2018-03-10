@@ -54,32 +54,6 @@ void pruferCode (int vertex, int *root, int *leaf) {
     }
 }
 
-<<<<<<< HEAD
-void Sort(int vertex, int *root, int *leaf) {
-    int i, min, j;
-    for (i = 0; i < vertex - 2; i++) {
-        min = i;
-        for (j = i + 1; j < vertex - 1; j++) {
-            if (leaf[min] > leaf[j]) {
-                min = j;
-            }
-        }
-        swap(leaf[min], leaf[i]);
-        swap(root[min], root[i]);
-    }
-}
-
-int main()
-{
-    int i, vertex;
-    cout << "input numbers of vertex :" ; cin >> vertex;
-
-    int root[vertex - 1];
-    int leaf[vertex - 1];
- 
-    for (i = 0; i < vertex - 1; i++) {
-        cout << "canh thu " << i + 1 << " : "; cin >>root[i] >> leaf[i];
-=======
 
 int main() {
     int vertex;
@@ -91,7 +65,6 @@ int main() {
     
     for (int i = 0; i < vertex - 1; i++) {
         cout << "nhap canh thu " << i + 1 << ": "; cin >> root[i] >> leaf[i];
->>>>>>> InputFromFile
     }
     pruferCode(vertex, root, leaf);
     return 0;
